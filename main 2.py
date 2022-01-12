@@ -16,6 +16,7 @@ gameplayer2 = random.choice(["ножницы", "камень", "бумага"])
 
 if gameplayer1 == gameplayer2:
     print("ничья")
+    print(gameplayer2)
 
 elif gameplayer1== "камень":
     if gameplayer2== "ножницы":
@@ -24,6 +25,33 @@ elif gameplayer1== "камень":
     else:
         print("player2:", gameplayer2, "win")
         print("player1:", gameplayer1, "lose")
+
+elif gameplayer2== "камень":
+    if gameplayer1== "бумага":
+        print("player1:", gameplayer1, "win")
+        print("player2:", gameplayer2, "lose")
+    else:
+        print("player2:", gameplayer2, "win")
+        print("player1:", gameplayer1, "lose")
+
+elif gameplayer1== "бумага" :
+    if gameplayer2=="камень":
+        print("player1:", gameplayer1, "win")
+        print("player2:", gameplayer2, "lose")
+    else:
+        print("player2:", gameplayer2, "win")
+        print("player1:", gameplayer1, "lose")
+
+elif gameplayer1== "ножницы" :
+    if gameplayer2=="камень":
+        print("player1:", gameplayer2, "win")
+        print("player2:", gameplayer1, "lose")
+    else:
+        print("player2:", gameplayer1, "win")
+        print("player1:", gameplayer2, "lose")
+
+
+
 
 #else:
        # print("player2:", gameplayer2, "win")
